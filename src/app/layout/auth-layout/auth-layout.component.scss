@@ -1,0 +1,21 @@
+@import '/src/assets/styles/colors.scss';
+
+.auth{
+    height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+    background: $post-milk;
+
+    &__form {
+        flex: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    &__box {
+        height: 100%;
+        flex: 30%;
+        background: $post-pink;
+    }
+}

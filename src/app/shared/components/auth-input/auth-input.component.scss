@@ -1,0 +1,30 @@
+@import '/src/assets/styles/colors.scss';
+
+.auth{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    &__label {
+        display: inline-block;
+        width: fit-content;
+        font-size: 16px;
+        font-weight: 400;
+        cursor: pointer;
+    }
+
+    &__input {
+        width: auto;
+        padding: 8px 24px;
+        border-radius: 50px;
+        border: 1px solid $post-pink;
+        background-color: inherit;
+        outline: none;
+        transition: 0.3s;
+    }
+}
+
+.error {
+    transition: 0.3s;
+    border-color: $post-red;
+}

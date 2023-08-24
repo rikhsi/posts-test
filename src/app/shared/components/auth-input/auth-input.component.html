@@ -1,0 +1,6 @@
+<div class="auth">
+    <ng-container *ngIf="label">
+      <label [for]="label" class="auth__label">{{label}}:</label>
+    </ng-container>
+    <input [id]="label" [type]="type" class="auth__input" [ngClass]="{'error': error}" [value]="value" [(ngModel)]="value" (ngModelChange)="updateValue()">
+</div>

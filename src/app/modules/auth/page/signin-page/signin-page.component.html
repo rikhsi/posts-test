@@ -1,0 +1,37 @@
+<div class="register">
+    <p class="register__title">Please Fill out form to Register!</p>
+    <form [formGroup]="createForm" class="register__form">
+        <div class="form__inputs">
+            <app-auth-input 
+                [label]="'Name'" 
+                [type]="'text'" 
+                [formControlName]="'name'"
+                [error]="createForm.controls['name'].invalid && createForm.controls['name'].dirty"
+            >
+            </app-auth-input>
+            <app-auth-input 
+                [label]="'Username'" 
+                [type]="'text'" 
+                [formControlName]="'username'"
+                [error]="createForm.controls['username'].invalid && createForm.controls['username'].dirty"
+            >
+            </app-auth-input>
+            <app-auth-input 
+                [label]="'Email'" 
+                [type]="'text'" 
+                [formControlName]="'email'"
+                [error]="createForm.controls['email'].invalid && createForm.controls['email'].dirty"
+            >
+            </app-auth-input>
+            <app-auth-input 
+                [label]="'Password'" 
+                [type]="'password'" 
+                [formControlName]="'password'"
+                [error]="createForm.controls['password'].invalid && createForm.controls['password'].dirty"
+            >
+            </app-auth-input>
+        </div>
+        <app-auth-button [disabled]="isLoading" [type]="'Register'" (clicked)="submit()"></app-auth-button>
+    </form>
+    <p class="register__offer" (click)="navigate()">Do you have an account?</p>
+</div>

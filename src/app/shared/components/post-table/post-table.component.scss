@@ -1,0 +1,61 @@
+@import '/src/assets/styles/colors.scss';
+
+.post {
+    &__container {
+        width: fit-content;
+        height: auto;
+        overflow: hidden;
+    }
+    &__table {
+        width: 100%;
+        table-layout: auto;
+    }
+}
+
+.table {
+    &__head {
+        background-color: $post_milk;
+    }
+}
+
+.border{
+    &__row{
+        padding: 0 24px;
+    }
+    &__line{
+        padding: 0;
+        height: 1px;
+        background-color: $post_grey;
+    }
+}
+
+
+th {
+    text-align: start;
+    padding: 12px 24px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 120%;
+    color: $post-black;
+
+    @media (max-width:767px) {
+        padding: 12px 20px;
+        font-size: 10px;
+    }
+}
+
+
+td {
+    padding: 16px 24px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    color: $post-grey;
+    text-transform: uppercase;
+
+    @media (max-width:767px) {
+        padding: 12px 20px;
+        font-size: 12px;
+    }
+}

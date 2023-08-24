@@ -1,0 +1,9 @@
+<div class="post">
+    <ul class="post__list">
+        <ng-container *ngIf="post$ | async as post">
+            <li>{{post.title}}</li>
+            <li>{{post.body}}</li>
+        </ng-container>
+    </ul>
+    <app-admin-button [type]="'All posts'" (clicked)="navigate()"></app-admin-button>
+</div>

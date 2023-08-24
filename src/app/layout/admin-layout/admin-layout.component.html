@@ -1,0 +1,8 @@
+<div class="admin__wrapper">
+    <header class="admin__header">
+        <app-admin-button [type]="'Log Out'" (clicked)="logOut()"></app-admin-button>
+    </header>
+    <main class="admin__content">
+        <router-outlet></router-outlet>
+    </main>
+</div>

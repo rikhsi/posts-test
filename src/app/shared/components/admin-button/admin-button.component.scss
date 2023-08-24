@@ -1,0 +1,14 @@
+@import '/src/assets/styles/colors.scss';
+@import '/src/assets/styles/animations.scss';
+
+.button {
+    padding: 8px;
+    background: $post-purple;
+    border: none;
+    color: $post-white;
+    text-transform: uppercase;
+}
+
+.active {
+    animation: pulse 0.3s ease 1;
+}

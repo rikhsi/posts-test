@@ -1,0 +1,45 @@
+@import '/src/assets/styles/colors.scss';
+
+:host {
+    width: 100%;
+    max-width: 370px;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    &__title {
+        text-align: center;
+        font-size: 16px;
+        font-weight: 700;
+        color: $post-grey;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 42px;
+    }
+    &__offer {
+        text-align: center;
+        font-size: 14px;
+        font-weight: 500;
+        color: $post-black;
+        transition: 0.3;
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.form {
+    &__inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+}
